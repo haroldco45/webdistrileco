@@ -3,37 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibras Positivas | Agencia de Desarrollo Web</title>
+    <title>Vibras Positivas | Engineering & Software Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <header>
         <nav class="container">
             <div class="logo">Vibras<span>Positivas</span></div>
+            <div class="status-dot"><span></span> Sistema Operativo</div>
             <ul class="nav-links">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="https://wa.me/573117700431" class="btn-nav">Contacto</a></li>
+                <li><a href="#ingenieria">Ingeniería</a></li>
+                <li><a href="#ecosistema">Ecosistema</a></li>
+                <li><a href="https://wa.me/573117700431" class="btn-cta">Consultoría Tech</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Impulsamos tunegocio  con <br><span class="highlight">Soluciones Digitales</span></h1>
-            <p>Desarrollo de aplicaciones web personalizadas, rápidas y eficientes. El respaldo tecnológico que tu marca necesita.</p>
-            <div class="hero-btns">
-                <a href="#portafolio" class="btn-primary">Ver Proyectos</a>
-                <a href="https://wa.me/573117700431" class="btn-secondary">Hablemos por WhatsApp</a>
+        <div class="grid-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="tag">Más que publicidad: Ingeniería de Software</div>
+                <h1>Arquitectamos el <span class="text-gradient">Futuro Operativo</span> de su Empresa</h1>
+                <p>Desarrollamos ecosistemas digitales robustos, gestión de cartera automatizada y soluciones de software a medida que transforman datos en decisiones.</p>
+                <div class="hero-actions">
+                    <a href="#ecosistema" class="btn-main">Explorar Soluciones</a>
+                    <a href="#ingenieria" class="btn-sub">Nuestra Stack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ingenieria" class="tech-stack">
+        <div class="container">
+            <h2 class="section-label">Capacidades Técnicas</h2>
+            <div class="stack-grid">
+                <div class="stack-item">
+                    <i data-lucide="database"></i>
+                    <h3>Arquitectura de Datos</h3>
+                    <p>Sistemas de gestión de cartera y bases de datos relacionales para control total de activos.</p>
+                </div>
+                <div class="stack-item">
+                    <i data-lucide="layers"></i>
+                    <h3>Ecosistemas Web</h3>
+                    <p>Desarrollo de Progressive Web Apps (PWA) integradas para operación multi-dispositivo.</p>
+                </div>
+                <div class="stack-item">
+                    <i data-lucide="cpu"></i>
+                    <h3>Automatización</h3>
+                    <p>Optimización de procesos internos mediante algoritmos de respuesta rápida y flujos lógicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ecosistema" class="showcase">
+        <div class="container">
+            <h2 class="section-label">Proyectos Activos</h2>
+            <div class="project-list">
+                <div class="project-row">
+                    <div class="project-info">
+                        <span class="category">Fintech / Cartera</span>
+                        <h3>Sistema de Control de Cartera 02</h3>
+                        <p>Interfaz de alta precisión para el seguimiento de cobros, estados financieros y reportes en tiempo real.</p>
+                        <a href="https://haroldco45.github.io/cartera02/" target="_blank" class="link-view">Ver Demo Técnica <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                    <div class="project-visual">
+                        <div class="mockup-screen">
+                            <div class="screen-bar"><span></span><span></span><span></span></div>
+                            <div class="screen-content">CARTERA V02</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row reverse">
+                    <div class="project-info">
+                        <span class="category">App Ecosystem</span>
+                        <h3>Vibras Positivas Apps</h3>
+                        <p>Hub centralizado de aplicaciones para diversas verticales: desde logística hasta servicios legales premium.</p>
+                        <a href="https://haroldco45.github.io/vibras-positivas-apps/" target="_blank" class="link-view">Explorar Ecosistema <i data-lucide="arrow-up-right"></i></a>
+                    </div>
+                    <div class="project-visual">
+                        <div class="mockup-screen second">
+                            <div class="screen-bar"><span></span><span></span><span></span></div>
+                            <div class="screen-content">APPS HUB</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>App desarrollada por Vibras Positivas | Derechos de Autor (3117700431)</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Vibras<span>Positivas</span></div>
+                <p>Soluciones Digitales de Alto Rendimiento.</p>
+            </div>
+            <div class="footer-legal">
+                <p>App desarrollada por Vibras Positivas</p>
+                <p>Derechos de Autor (3117700431) | Caucasia, Antioquia</p>
+            </div>
+        </div>
     </footer>
 
+    <script>lucide.createIcons();</script>
 </body>
 </html>
