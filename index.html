@@ -13,7 +13,7 @@
     <header>
         <nav class="container">
             <div class="brand-box">
-                <img src="IMG-20260323-WA0005.jpg" alt="Logo" class="nav-logo">
+                <img src="1002043571.jpg" alt="Logo" class="nav-logo">
                 <div class="logo-text">Vibras<span>Positivas</span></div>
             </div>
             <ul class="nav-links">
@@ -31,7 +31,7 @@
             <h1>Arquitectura de Sistemas <span class="text-gradient">Premium</span></h1>
             <p>Software robusto y soluciones tecnológicas de alto nivel para marcas líderes.</p>
             <div class="hero-actions">
-                <a href="#ecosistema" class="btn-main">Soluciones</a>
+                <a href="#ecosistema" class="btn-main">Nuestras Soluciones</a>
                 <a href="nda.html" class="btn-sub">Solicitar Demo</a>
             </div>
         </div>
@@ -41,7 +41,6 @@
         <div class="container">
             <h2 class="section-title">Ecosistema Pro</h2>
             <div class="solutions-grid">
-                
                 <div class="solution-card">
                     <div class="price-tag">$100k + $50k Anual</div>
                     <div class="card-icon"><i data-lucide="contact-2"></i></div>
@@ -56,36 +55,32 @@
                     <h3>Audio Branding</h3>
                     <p>Escucha el éxito de <strong>Solo Pizza</strong>:</p>
                     <div class="audio-player">
-                        <audio id="jingle-audio">
-                            <source src="VID-20260315-WA0060.mp4" type="video/mp4">
-                        </audio>
+                        <audio id="jingle-audio" src="VID-20260315-WA0060.mp4"></audio>
                         <button onclick="togglePlay()" id="play-btn" class="play-circle-btn">
-                            <i data-lucide="play-circle" size="40"></i>
+                            <i data-lucide="play-circle" size="44"></i>
                         </button>
                     </div>
                     <a href="https://wa.me/573117700431?text=Cotizar jingle" class="btn-card">Cotizar <i data-lucide="mic"></i></a>
                 </div>
-
             </div>
         </div>
     </section>
 
     <footer class="container">
-        <p>Vibras Positivas | (3117700431) | 2026</p>
+        <p>Desarrollado por Vibras Positivas | (3117700431) | &copy; 2026</p>
     </footer>
 
     <script>
         lucide.createIcons();
-        const audio = document.getElementById('jingle-audio');
-        const playBtn = document.getElementById('play-btn');
-
         function togglePlay() {
+            const audio = document.getElementById('jingle-audio');
+            const playBtn = document.getElementById('play-btn');
             if (audio.paused) {
                 audio.play();
-                playBtn.innerHTML = '<i data-lucide="pause-circle" size="40"></i>';
+                playBtn.innerHTML = '<i data-lucide="pause-circle" size="44"></i>';
             } else {
                 audio.pause();
-                playBtn.innerHTML = '<i data-lucide="play-circle" size="40"></i>';
+                playBtn.innerHTML = '<i data-lucide="play-circle" size="44"></i>';
             }
             lucide.createIcons();
         }
